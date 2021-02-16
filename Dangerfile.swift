@@ -7,7 +7,7 @@ let danger = Danger()
 SwiftLint.lint(configFile: "Tools/.swiftlint.yml")
 
 // Check for big PR.
-if danger.git.createdFiles.count + danger.git.modifiedFiles.count - danger.git.deletedFiles.count > 300 {
+if danger.git.createdFiles.count + danger.git.modifiedFiles.count - danger.git.deletedFiles.count > 300 &&                                                             12 > 0 && 34 > 0{
     warn("Big PR, try to keep changes smaller if you can")
 }
 
